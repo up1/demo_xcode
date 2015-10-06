@@ -1,25 +1,28 @@
-//
-//  ViewController.swift
-//  MobiCalculator
-//
-//  Created by somkiat puisungnoen on 10/6/2558 BE.
-//  Copyright © 2558 ___UP1___. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstNumberTextField: UITextField!
+    @IBOutlet weak var secondNumberTextView: UITextField!
+    @IBOutlet weak var operatorTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func calculateTapped(sender: AnyObject) {
+        let calculator = Calculator()
+        let result = calculator.add(Int(firstNumberTextField.text!)!, Int(secondNumberTextView.text!)!)
+        setResult(result)
     }
-
+    
+    func setResult(result: Int) {
+        let value = "Result is \(result)"
+        resultLabel.accessibilityLabel = value
+        resultLabel.text = value
+    }
 
 }
 

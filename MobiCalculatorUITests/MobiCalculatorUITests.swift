@@ -1,10 +1,3 @@
-//
-//  MobiCalculatorUITests.swift
-//  MobiCalculatorUITests
-//
-//  Created by somkiat puisungnoen on 10/6/2558 BE.
-//  Copyright © 2558 ___UP1___. All rights reserved.
-//
 
 import XCTest
 
@@ -12,25 +5,33 @@ class MobiCalculatorUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCalculatorWithAddOperation() {
+        let app = XCUIApplication()
+        let firstTextField = app.textFields["first"]
+        firstTextField.tap()
+        firstTextField.typeText("10")
+        
+        let operTextField = app.textFields["oper"]
+        operTextField.tap()
+        operTextField.tap()
+        operTextField.typeText("+")
+        
+        let secondTextField = app.textFields["second"]
+        secondTextField.tap()
+        secondTextField.tap()
+        secondTextField.typeText("20")
+        
+        app.buttons["calculate"].tap()
+        XCTAssert(app.staticTexts["Result is 30"].exists)
+        
     }
     
 }

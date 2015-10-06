@@ -14,6 +14,11 @@
 		A2CBB1621BC374990081D441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CBB1601BC374990081D441 /* LaunchScreen.storyboard */; };
 		A2CBB16D1BC3749A0081D441 /* MobiCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB16C1BC3749A0081D441 /* MobiCalculatorTests.swift */; };
 		A2CBB1781BC3749A0081D441 /* MobiCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB1771BC3749A0081D441 /* MobiCalculatorUITests.swift */; };
+		A2CBB1861BC3770B0081D441 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB1851BC3770B0081D441 /* Calculator.swift */; };
+		A2CBB1881BC385760081D441 /* OperatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB1871BC385760081D441 /* OperatorTest.swift */; };
+		A2CBB18A1BC386DE0081D441 /* OperandTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB1891BC386DE0081D441 /* OperandTest.swift */; };
+		A2CBB18C1BC3873B0081D441 /* Operand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB18B1BC3873B0081D441 /* Operand.swift */; };
+		A2CBB18E1BC387950081D441 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CBB18D1BC387950081D441 /* Operator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		A2CBB1731BC3749A0081D441 /* MobiCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CBB1771BC3749A0081D441 /* MobiCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiCalculatorUITests.swift; sourceTree = "<group>"; };
 		A2CBB1791BC3749A0081D441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CBB1851BC3770B0081D441 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		A2CBB1871BC385760081D441 /* OperatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorTest.swift; sourceTree = "<group>"; };
+		A2CBB1891BC386DE0081D441 /* OperandTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperandTest.swift; sourceTree = "<group>"; };
+		A2CBB18B1BC3873B0081D441 /* Operand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operand.swift; sourceTree = "<group>"; };
+		A2CBB18D1BC387950081D441 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,9 @@
 				A2CBB15E1BC374990081D441 /* Assets.xcassets */,
 				A2CBB1601BC374990081D441 /* LaunchScreen.storyboard */,
 				A2CBB1631BC374990081D441 /* Info.plist */,
+				A2CBB1851BC3770B0081D441 /* Calculator.swift */,
+				A2CBB18B1BC3873B0081D441 /* Operand.swift */,
+				A2CBB18D1BC387950081D441 /* Operator.swift */,
 			);
 			path = MobiCalculator;
 			sourceTree = "<group>";
@@ -112,6 +125,8 @@
 			children = (
 				A2CBB16C1BC3749A0081D441 /* MobiCalculatorTests.swift */,
 				A2CBB16E1BC3749A0081D441 /* Info.plist */,
+				A2CBB1871BC385760081D441 /* OperatorTest.swift */,
+				A2CBB1891BC386DE0081D441 /* OperandTest.swift */,
 			);
 			path = MobiCalculatorTests;
 			sourceTree = "<group>";
@@ -256,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2CBB15A1BC374990081D441 /* ViewController.swift in Sources */,
+				A2CBB18C1BC3873B0081D441 /* Operand.swift in Sources */,
+				A2CBB18E1BC387950081D441 /* Operator.swift in Sources */,
 				A2CBB1581BC374990081D441 /* AppDelegate.swift in Sources */,
+				A2CBB1861BC3770B0081D441 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2CBB16D1BC3749A0081D441 /* MobiCalculatorTests.swift in Sources */,
+				A2CBB1881BC385760081D441 /* OperatorTest.swift in Sources */,
+				A2CBB18A1BC386DE0081D441 /* OperandTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

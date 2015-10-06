@@ -1,36 +1,32 @@
-//
-//  MobiCalculatorTests.swift
-//  MobiCalculatorTests
-//
-//  Created by somkiat puisungnoen on 10/6/2558 BE.
-//  Copyright © 2558 ___UP1___. All rights reserved.
-//
-
 import XCTest
 @testable import MobiCalculator
 
 class MobiCalculatorTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAdd_with_1_2_should_return_3() {
+        let calculator = Calculator()
+        calculator.oper = StubAddOperator()
+        XCTAssertEqual(3, calculator.of(1, 2))
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testMinus_with_1_2_should_return_1() {
+        let calculator = Calculator()
+        calculator.oper = StubMinusOperator()
+        XCTAssertEqual(-1, calculator.of(1, 2))
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAdd() {
+        let calculator = Calculator()
+        let actualResult = calculator.add(1, 2)
+        XCTAssertEqual(3, actualResult)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testMinus() {
+        let calculator = Calculator()
+        let actualResult = calculator.minus(2, 1)
+        XCTAssertEqual(1, actualResult)
     }
+    
+    
     
 }
