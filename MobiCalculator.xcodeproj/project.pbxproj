@@ -422,6 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = up1.MobiCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 			};
 			name = Debug;
 		};
@@ -503,6 +504,7 @@
 				A2CBB17E1BC3749A0081D441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2CBB17F1BC3749A0081D441 /* Build configuration list for PBXNativeTarget "MobiCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +513,7 @@
 				A2CBB1811BC3749A0081D441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2CBB1821BC3749A0081D441 /* Build configuration list for PBXNativeTarget "MobiCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +522,7 @@
 				A2CBB1841BC3749A0081D441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
